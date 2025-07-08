@@ -258,7 +258,7 @@ try_ballist_combat:
 }
 
 LYN_REPLACE_CHECK(AiTryDoStaff);
-bool AiTryDoStaff(s8 (*isEnemy)(struct Unit *unit))
+s8 AiTryDoStaff(s8 (*isEnemy)(struct Unit *unit))
 {
 	struct AiSimuSlotEnt *it;
 	u8 exp = 0;

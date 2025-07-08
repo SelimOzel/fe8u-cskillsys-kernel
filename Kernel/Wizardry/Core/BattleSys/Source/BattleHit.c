@@ -200,7 +200,7 @@ void BattleGenerateHitEffects(struct BattleUnit *attacker, struct BattleUnit *de
 }
 
 LYN_REPLACE_CHECK(BattleGenerateHit);
-bool BattleGenerateHit(struct BattleUnit *attacker, struct BattleUnit *defender)
+s8 BattleGenerateHit(struct BattleUnit *attacker, struct BattleUnit *defender)
 {
 	int hp_pre = defender->unit.curHP;
 

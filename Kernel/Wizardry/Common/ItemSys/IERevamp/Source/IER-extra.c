@@ -27,7 +27,7 @@ STATIC_DECLAR bool IER_CheckIList(int iid, const u8 *list)
  * Promotion list
  */
 LYN_REPLACE_CHECK(CanUnitUsePromotionItem);
-bool CanUnitUsePromotionItem(struct Unit *unit, int item)
+s8 CanUnitUsePromotionItem(struct Unit *unit, int item)
 {
 	int iid = ITEM_INDEX(item);
 	const struct IER_PromoConfig *it = *pr_gpIER_PromotionItemTable;
@@ -183,7 +183,7 @@ bool AiGetChestUnlockItemSlot(u8 *out)
 }
 
 LYN_REPLACE_CHECK(AiTryHealSelf);
-bool AiTryHealSelf(void)
+s8 AiTryHealSelf(void)
 {
 	int i;
 

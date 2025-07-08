@@ -24,7 +24,7 @@ STATIC_DECLAR const struct ProcCmd ProcScr_MapAnimDisplayRoundWithHpCost[] = {
 	PROC_END
 };
 
-bool MapAnimRoundAnim_DisplayHpCost(ProcPtr parent)
+s8 MapAnimRoundAnim_DisplayHpCost(ProcPtr parent)
 {
 	int round = GetBattleHitRound(gManimSt.pCurrentRound);
 	int cost = GetExtBattleHit(round)->hp_cost;

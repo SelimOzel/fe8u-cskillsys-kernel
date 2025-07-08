@@ -51,7 +51,7 @@ void GiveKernelBonus(void)
 }
 
 LYN_REPLACE_CHECK(LoadSavedEid8A);
-bool LoadSavedEid8A(int slot)
+s8 LoadSavedEid8A(int slot)
 {
 	/**
 	 * Check can exec bonus-claim

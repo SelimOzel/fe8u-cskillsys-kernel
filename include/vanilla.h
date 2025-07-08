@@ -68,7 +68,7 @@ struct CpPerformProc {
 	/* 31 */ u8 isUnitVisible;
 };
 
-bool AiDummyAction(struct CpPerformProc *proc);
+s8 AiDummyAction(struct CpPerformProc *proc);
 bool AiEscapeAction(struct CpPerformProc *proc);
 bool AiWaitAndClearScreenAction(struct CpPerformProc *proc);
 bool AiPillageAction(struct CpPerformProc *proc);

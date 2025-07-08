@@ -4,7 +4,7 @@
 extern struct Unit gStatGainSimUnit;
 
 LYN_REPLACE_CHECK(CanUnitUseStatGainItem);
-bool CanUnitUseStatGainItem(struct Unit *unit, int item)
+s8 CanUnitUseStatGainItem(struct Unit *unit, int item)
 {
 	const struct ItemStatBonuses *bonuses = GetItemStatBonuses(item);
 

@@ -32,7 +32,7 @@ u16 *__GetConvoyItemArray(void)
 }
 
 LYN_REPLACE_CHECK(HasConvoyAccess);
-bool8 HasConvoyAccess(void)
+s8 HasConvoyAccess(void)
 {
 	return true;
 }
@@ -334,7 +334,7 @@ void HandleNewItemGetFromDrop(struct Unit *unit, int item, ProcPtr proc)
 }
 
 LYN_REPLACE_CHECK(PrepItemScreen_GiveAll);
-bool PrepItemScreen_GiveAll(struct Unit *unit)
+s8 PrepItemScreen_GiveAll(struct Unit *unit)
 {
 	int i;
 	int unitItemCount = GetUnitItemCount(unit);

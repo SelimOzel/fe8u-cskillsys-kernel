@@ -46,7 +46,7 @@ STATIC_DECLAR bool CheckUnitNullEffective(struct Unit *unit)
 }
 
 LYN_REPLACE_CHECK(IsItemEffectiveAgainst);
-bool IsItemEffectiveAgainst(u16 item, struct Unit *unit)
+s8 IsItemEffectiveAgainst(u16 item, struct Unit *unit)
 {
 	int i, jid;
 	const u8 *list;
@@ -134,7 +134,7 @@ STATIC_DECLAR bool IsBattleUnitEffectiveAgainst(struct BattleUnit *actor, struct
 }
 
 LYN_REPLACE_CHECK(IsUnitEffectiveAgainst);
-bool IsUnitEffectiveAgainst(struct Unit *actor, struct Unit *target)
+s8 IsUnitEffectiveAgainst(struct Unit *actor, struct Unit *target)
 {
 	FORCE_DECLARE int jid_target = UNIT_CLASS_ID(target);
 

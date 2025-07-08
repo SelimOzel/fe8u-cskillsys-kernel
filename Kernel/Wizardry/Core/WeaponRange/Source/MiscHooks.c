@@ -6,7 +6,7 @@
 #include "gaiden-magic.h"
 
 LYN_REPLACE_CHECK(AiReachesByBirdsEyeDistance);
-bool AiReachesByBirdsEyeDistance(struct Unit *unit, struct Unit *other, u16 item)
+s8 AiReachesByBirdsEyeDistance(struct Unit *unit, struct Unit *other, u16 item)
 {
 	int distance = RECT_DISTANCE(unit->xPos, unit->yPos, other->xPos, other->yPos);
 
@@ -17,7 +17,7 @@ bool AiReachesByBirdsEyeDistance(struct Unit *unit, struct Unit *other, u16 item
 }
 
 LYN_REPLACE_CHECK(AiCouldReachByBirdsEyeDistance);
-bool AiCouldReachByBirdsEyeDistance(struct Unit *unit, struct Unit *other, u16 item)
+s8 AiCouldReachByBirdsEyeDistance(struct Unit *unit, struct Unit *other, u16 item)
 {
 
 	int distance = RECT_DISTANCE(unit->xPos, unit->yPos, other->xPos, other->yPos);
@@ -382,7 +382,7 @@ void GenerateUnitCompleteStaffRange(struct Unit *unit)
 }
 
 LYN_REPLACE_CHECK(GenerateDangerZoneRange);
-void GenerateDangerZoneRange(bool boolDisplayStaffRange)
+void GenerateDangerZoneRange(s8 boolDisplayStaffRange)
 {
 	int i, enemyFaction;
 	int hasMagicRank, prevHasMagicRank;

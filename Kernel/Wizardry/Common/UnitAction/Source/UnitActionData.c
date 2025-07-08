@@ -1,14 +1,14 @@
 #include "common-chax.h"
 #include "action-expa.h"
 
-bool _ActionWait(ProcPtr proc);
-bool _ActionCombat(ProcPtr proc);
-bool _ActionStaffDoorChestUseItem(ProcPtr proc);
-bool _ActionPick(ProcPtr proc);
+s8 _ActionWait(ProcPtr proc);
+s8 _ActionCombat(ProcPtr proc);
+s8 _ActionStaffDoorChestUseItem(ProcPtr proc);
+s8 _ActionPick(ProcPtr proc);
 
-bool ActionExecSkill(ProcPtr proc);
-bool ActionGaidenMagicCombat(ProcPtr proc);
-bool ActionGaidenMagicStaff(ProcPtr proc);
+s8 ActionExecSkill(ProcPtr proc);
+s8 ActionGaidenMagicCombat(ProcPtr proc);
+s8 ActionGaidenMagicStaff(ProcPtr proc);
 
 const UnitActionFunc_t gUnitActionTable[CONFIG_UNIT_ACTION_AMT] = {
 	[UNIT_ACTION_WAIT] = _ActionWait,

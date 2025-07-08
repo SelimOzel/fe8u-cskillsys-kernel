@@ -489,7 +489,7 @@ void BattleUnwind(void)
 }
 
 LYN_REPLACE_CHECK(BattleGenerateRoundHits);
-bool BattleGenerateRoundHits(struct BattleUnit *attacker, struct BattleUnit *defender)
+s8 BattleGenerateRoundHits(struct BattleUnit *attacker, struct BattleUnit *defender)
 {
 	int i, count;
 	u32 attrs;
@@ -537,7 +537,7 @@ bool BattleGenerateRoundHits(struct BattleUnit *attacker, struct BattleUnit *def
 }
 
 LYN_REPLACE_CHECK(BattleGetFollowUpOrder);
-bool BattleGetFollowUpOrder(struct BattleUnit **outAttacker, struct BattleUnit **outDefender)
+s8 BattleGetFollowUpOrder(struct BattleUnit **outAttacker, struct BattleUnit **outDefender)
 {
 	if (CheckCanTwiceAttackOrder(&gBattleActor, &gBattleTarget)) {
 		*outAttacker = &gBattleActor;

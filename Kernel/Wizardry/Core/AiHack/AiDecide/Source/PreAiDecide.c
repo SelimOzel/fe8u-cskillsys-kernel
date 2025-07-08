@@ -9,7 +9,7 @@ extern PreAiDecideFunc_t const *const gpPreAi1DecideHook;
 extern PreAiDecideFunc_t const *const gpPreAi2DecideHook;
 
 LYN_REPLACE_CHECK(AiTryExecScriptA);
-bool AiTryExecScriptA(void)
+s8 AiTryExecScriptA(void)
 {
 	gpAiScriptCurrent = gpAi1Table[0][gActiveUnit->ai1];
 	gpAiScriptCurrent = gpAiScriptCurrent + gActiveUnit->ai_a_pc;
@@ -33,7 +33,7 @@ bool AiTryExecScriptA(void)
 }
 
 LYN_REPLACE_CHECK(AiTryExecScriptB);
-bool AiTryExecScriptB(void)
+s8 AiTryExecScriptB(void)
 {
 	gpAiScriptCurrent = gpAi2Table[0][gActiveUnit->ai2];
 	gpAiScriptCurrent = gpAiScriptCurrent + gActiveUnit->ai_b_pc;

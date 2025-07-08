@@ -78,7 +78,7 @@ void NewEfxHpCost(struct Anim *anim)
 	LTRACEF("round=%d, off=%d, cur=%d, next=%d", anim->nextRoundId - 1, gEfxHpLutOff[pos], proc->hpcur, proc->hpend);
 }
 
-bool EfxHpCostExists(void)
+s8 EfxHpCostExists(void)
 {
 	return Proc_Exists(ProcScr_EfxHpCost);
 }

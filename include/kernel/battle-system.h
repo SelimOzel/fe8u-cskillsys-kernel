@@ -273,9 +273,9 @@ bool TryBattleHpCost(struct BattleUnit *bu, int hp_cost);
 bool AddBattleHpCost(struct BattleUnit *bu, int round, int cost);
 
 void BattleGenerateHitHpCost(struct BattleUnit *attacker, struct BattleUnit *defender);
-bool MapAnimRoundAnim_DisplayHpCost(ProcPtr parent);
+s8 MapAnimRoundAnim_DisplayHpCost(ProcPtr parent);
 void NewEfxHpCost(struct Anim *anim);
-bool EfxHpCostExists(void);
+s8 EfxHpCostExists(void);
 
 /**
  * Item slot

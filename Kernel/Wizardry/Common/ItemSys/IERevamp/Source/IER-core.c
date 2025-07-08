@@ -21,7 +21,7 @@ NOINLINE const struct IERevamp *GetIERevamp(int item)
  * Usability
  */
 LYN_REPLACE_CHECK(CanUnitUseItem);
-bool CanUnitUseItem(struct Unit* unit, int item)
+s8 CanUnitUseItem(struct Unit* unit, int item)
 {
 	const struct IERevamp *revamp;
 
@@ -79,7 +79,7 @@ void ActionStaffDoorChestUseItem(ProcPtr proc)
  * Prep usability
  */
 LYN_REPLACE_CHECK(CanUnitUseItemPrepScreen);
-bool CanUnitUseItemPrepScreen(struct Unit *unit, int item)
+s8 CanUnitUseItemPrepScreen(struct Unit *unit, int item)
 {
 	const struct IERevamp *revamp = GetIERevamp(item);
 

@@ -3,7 +3,7 @@
 #include "PortraitHeight.h"
 
 LYN_REPLACE_CHECK(ShouldFaceBeRaised);
-bool ShouldFaceBeRaised(int fid)
+s8 ShouldFaceBeRaised(int fid)
 {
 	const u8 *it;
 
